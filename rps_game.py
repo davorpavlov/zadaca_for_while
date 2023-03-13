@@ -7,9 +7,13 @@ while True:
     options = ['kamen', 'škare', 'papir']
     player_move = input('Kamen, škare ili papir? ')
     computer_move = random.choice(options)
-
+    
+    if player_move not in options:
+        print('Unijeli ste pogrešan izbor. Pokušajte ponovno.')
+        continue
+    
     print('Računalo je odabralo:', computer_move)
-
+    
     if player_move == computer_move:
         print('Rezultat je neriješen!')
     elif player_move == 'kamen':
