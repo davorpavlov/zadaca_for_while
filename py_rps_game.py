@@ -34,3 +34,4 @@ while True:
     play_again = input("Želite li ponovno igrati? (da/ne) ")
     if play_again.lower() != "da":
         break
+    
